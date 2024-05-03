@@ -19,7 +19,7 @@ def crate_task():
 
 	print(tasks)
 
-	return jsonify({'mensage': 'Nova tarefa criada com sucesso'})
+	return jsonify({'message': 'Nova tarefa criada com sucesso', 'id': new_task.id})
 
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
